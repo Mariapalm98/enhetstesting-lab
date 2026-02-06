@@ -26,6 +26,7 @@ public class AccountComponentTest {
 
     @Test
     public void testWithdraw() {
+        accountComponent.deposit(125);
         accountComponent.withdraw(125);
         assertEquals(0, accountComponent.getBalance());
 
@@ -34,7 +35,8 @@ public class AccountComponentTest {
     @Test
     public void testDepositAndWithdraw() {
         accountComponent.deposit(1000);
+        accountComponent.deposit(500);
         accountComponent.withdraw(500);
-        assertEquals(500, accountComponent.getBalance());
+        assertEquals(1000, accountComponent.getBalance());
     }
 }
