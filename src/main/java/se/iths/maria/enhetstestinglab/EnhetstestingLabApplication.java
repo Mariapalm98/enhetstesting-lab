@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class EnhetstestingLabApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(EnhetstestingLabApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(EnhetstestingLabApplication.class, args);
+    }
 
 }

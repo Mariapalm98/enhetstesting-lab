@@ -1,4 +1,8 @@
 package se.iths.maria.enhetstestinglab.exception;
 
-public class InvalidAmountException {
+public class InvalidAmountException extends RuntimeException {
+
+    public InvalidAmountException(String message) {
+        super(message);
+    }
 }
